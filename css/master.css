@@ -1,0 +1,28 @@
+.titre{
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.arrow-left i{
+  font-size:24px;
+  float:right;
+}
+
+.arrow-left{
+  margin-top: 20px;
+}
+
+.arrow-right i{
+  font-size: 24px;
+  float: left;
+}
+
+.arrow-right{
+  margin-top: 20px;
+}
+
+.mois{
+  text-align: center;
+  border: 1px solid black;
+}
