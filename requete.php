@@ -39,7 +39,7 @@ function generateMonth(){
     //Mettre mon compteur sur une base 1 et non 0
     $cptRealMois = $cptMois+1;
     //Création des div pour les mois avec un onClick qui permet d'appeller la méthode Ajax avec le bon paramètre
-    $str .=  "<div class='col-sm-1 mois' onclick='changeMonth(".$cptRealMois.")'><p>".$lesMois[$cptMois]."</p></div>";
+    $str .=  "<div class='col-sm-1 mois' id=".$cptRealMois." onclick='changeMonth(".$cptRealMois.")'><p>".$lesMois[$cptMois]."</p></div>";
     //incrémentation du compteur
     $cptMois ++;
   }

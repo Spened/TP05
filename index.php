@@ -15,9 +15,12 @@ include('requete.php')
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <?php include('navbar.php'); ?>
     <!-- Création d'une "LIGNE" BOOTSTRAP -->
     <div class="row">
-      <div class="col-sm-4"></div>
+      <div class="col-sm-4 sun">
+        <img src="img/sun.png" alt="Sun">
+      </div>
       <div class="col-sm-4">
         <h2 class="titre">Suivi d'affluence</h2>
       </div>
@@ -73,6 +76,7 @@ include('requete.php')
     </div>
   </body>
   <script>
+    $('#1').addClass("yellow");
     //Function AJAX pour changer d'année
     function nextYear(){
       //récupération de la valeur
@@ -103,7 +107,7 @@ include('requete.php')
           type:'POST',
           url:'ajax/pastYear.php',
           //Variable envoyé en post au fichier php
-          data:{annee:annee},$
+          data:{annee:annee},
           dataType:'text',
           success: function(annee){
             //Suppresion du text acutel
@@ -117,6 +121,7 @@ include('requete.php')
       );
     }
     function changeMonth(idMois){
+      $('.yellow').toggleClass('yellow');
       //récupération de la valeur
       idAnnee =$('#annee').text();
       $.ajax(
@@ -131,6 +136,7 @@ include('requete.php')
           document.getElementById('tbody').innerHTML = "";
           //Remplissage de la div tbody
           document.getElementById('tbody').innerHTML = mois, annee;
+          $('#'+idMois).toggleClass('yellow');
         },
         error: function(){
           //Si aucun vente n'as était faite ce mois ci, une pop up apparaitra

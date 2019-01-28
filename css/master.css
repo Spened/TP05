@@ -1,4 +1,19 @@
+body{
+  /* Copier coller dégueu */
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cedbe9+0,aac5de+17,6199c7+35,3a84c3+49,419ad6+61,4bb8f0+71,3a8bc2+84,26558b+100 */
+background: rgb(206,219,233); /* Old browsers */
+background: -moz-linear-gradient(-45deg, rgb(206,219,233) 0%, rgb(170,197,222) 17%, rgb(97,153,199) 35%, rgb(58,132,195) 49%, rgb(65,154,214) 61%, rgb(75,184,240) 71%, rgb(58,139,194) 84%, rgb(38,85,139) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, rgb(206,219,233) 0%,rgb(170,197,222) 17%,rgb(97,153,199) 35%,rgb(58,132,195) 49%,rgb(65,154,214) 61%,rgb(75,184,240) 71%,rgb(58,139,194) 84%,rgb(38,85,139) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, rgb(206,219,233) 0%,rgb(170,197,222) 17%,rgb(97,153,199) 35%,rgb(58,132,195) 49%,rgb(65,154,214) 61%,rgb(75,184,240) 71%,rgb(58,139,194) 84%,rgb(38,85,139) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cedbe9', endColorstr='#26558b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.yellow{
+  background-color: grey;
+}
+
 .titre{
+  color: white;
   text-align: center;
   font-weight: bold;
   text-decoration: underline;
@@ -7,6 +22,7 @@
 .arrow-left i{
   font-size:24px;
   float:right;
+  color: white;
 }
 
 .arrow-left{
@@ -16,6 +32,7 @@
 .arrow-right i{
   font-size: 24px;
   float: left;
+  color: white;
 }
 
 .arrow-right{
@@ -23,6 +40,30 @@
 }
 
 .mois{
+  margin-top: 3%;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+table{
+  margin-top: 2%;
+  color: white;
+  margin-bottom: 250px !important;
+}
+
+#annee{
+  color: white;
+  font-weight: bold;
+}
+
+.sun img{
+  height: 100px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.row{
+  margin:0;
 }
